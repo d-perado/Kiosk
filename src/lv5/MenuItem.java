@@ -3,15 +3,17 @@ package lv5;
 public class MenuItem {
 
     //속성
-    String menuName;
-    String menuInfomation;
-    Double price;
+    private String menuName;
+    private String menuInfomation;
+    private Double price;
+    private String category;
 
     //생성자
-    public MenuItem(String menuName, Double price, String menuInfomation){
+    public MenuItem(String menuName, Double price, String menuInfomation,String category){
         this.menuName = menuName;
         this.menuInfomation = menuInfomation;
         this.price = price;
+        this.category=category;
     }
 
     //기능
@@ -25,5 +27,9 @@ public class MenuItem {
 
     public String getMenuInfomation() {
         return this.menuInfomation;
+    }
+
+    public String getCategory(){
+        return this.category;
     }
 }

@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Kiosk {
     //속성
-    boolean isKiosk;
-    Menu menu;
+    private boolean isKiosk;
+    private Menu menu;
 
     //생성자
     Kiosk(Menu menu){

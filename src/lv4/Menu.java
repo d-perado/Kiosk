@@ -11,7 +11,7 @@ public class Menu {
 
     //생성자
     public Menu(){
-        this.menuItems = new ArrayList<MenuItem>();
+        this.menuItems=new ArrayList<>();
     }
     public Menu(List<MenuItem> menuItems){
         this.menuItems = menuItems;
@@ -19,7 +19,7 @@ public class Menu {
 
     //기능
     //메뉴 추가
-    public void addMenuItem(MenuItem menuItem){
+    public void add(MenuItem menuItem){
         this.menuItems.add(menuItem);
     }
 

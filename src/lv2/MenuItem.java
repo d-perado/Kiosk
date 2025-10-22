@@ -1,4 +1,4 @@
-package lv5;
+package lv2;
 
 public class MenuItem {
 
@@ -8,7 +8,7 @@ public class MenuItem {
     Double price;
 
     //생성자
-    public MenuItem(String menuName, Double price, String menuInfomation){
+    MenuItem(String menuName, Double price, String menuInfomation){
         this.menuName = menuName;
         this.menuInfomation = menuInfomation;
         this.price = price;

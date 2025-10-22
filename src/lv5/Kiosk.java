@@ -27,19 +27,20 @@ public class Kiosk {
 
             System.out.println("[ SHAKESHACK MENU ]");
             for (int i = 0; i < this.menu.getMenuItems().size(); i++) {
-                System.out.println((i+1)+".\t"+this.menu.getSelectItem(i).getMenuName()+"\t| W\t"+
-                        this.menu.getSelectItem(i).getPrice()+"\t|\t"+this.menu.getSelectItem(i).getMenuInfomation());
+                System.out.printf("%2d. %-20s| W%-5.1f|\t%-5s\n",i+1,this.menu.getSelectItem(i).getMenuName()
+                        ,this.menu.getSelectItem(i).getPrice()
+                        ,this.menu.getSelectItem(i).getMenuInfomation());
             }
-            System.out.println("0. 종료\t|\t종료");
-            System.out.println("메뉴를 선택하세요.");
+            System.out.printf("%2d. %-20s\n",0,"종료");
+            System.out.println(":::메뉴를 선택하세요:::");
             Integer input = sc.nextInt();
             if(input==0){
                 exit();
             } else {
-                System.out.println(menu.getSelectItem(input-1).menuName+"을(를) 담았습니다.");
+                System.out.println(":::"+menu.getSelectItem(input-1).menuName+"을(를) 담았습니다:::");
             }
         }
-        System.out.println("키오스크를 종료합니다.");
+        System.out.println(":::키오스크를 종료합니다:::");
     }
 
     public void exit(){

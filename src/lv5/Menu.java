@@ -1,6 +1,6 @@
 package lv5;
 
-import lv5.util.io.Category;
+import lv5.util.Category;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +28,7 @@ public class Menu {
     public MenuItem getSelectItem(int i){
         return this.menuItems.get(i);
     }
+
     //전체 메뉴 반환
     public List<MenuItem> getMenuItems() {
         return this.menuItems;

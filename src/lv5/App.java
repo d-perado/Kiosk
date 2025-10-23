@@ -1,6 +1,6 @@
 package lv5;
 
-import lv5.util.io.Category;
+import lv5.util.Category;
 
 public class App {
 
@@ -15,7 +15,7 @@ public class App {
         menu.add(new MenuItem("MinSang's Drink", 12.0, "민상님의 비밀레시피로 만들어진 특제음료",Category.DRINK));
         menu.add(new MenuItem("Secret Drink", 110.0, "비밀의음료",Category.DRINK));
         menu.add(new MenuItem("Dororong Cookies", 2.0, "도로롱쿠키",Category.DESSERT));
-        menu.add(new MenuItem("ZzubZzub Cookies", 0.0, "쩝쩝쿠키",Category.DESSERT));
+        menu.add(new MenuItem("ZzubZzub Cookies", 0.1, "쩝쩝쿠키",Category.DESSERT));
         menu.add(new MenuItem("NyamNyaam Cookies", 3.0, "냠냠쿠키", Category.DESSERT));
 
 

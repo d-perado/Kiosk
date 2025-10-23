@@ -64,12 +64,6 @@ public class Kiosk {
                 }
             }
 
-//            System.out.println("[ SHAKESHACK MENU ]");
-//            for (int i = 0; i < this.menu.getMenuItems().size(); i++) {
-//                System.out.printf("%2d. %-20s| W%-5.1f|\t%-5s\n",i+1,this.menu.getSelectItem(i).getMenuName()
-//                        ,this.menu.getSelectItem(i).getPrice()
-//                        ,this.menu.getSelectItem(i).getMenuInfomation());
-//            }
             System.out.printf("%2d. %-20s\n",0,"뒤로가기");
             System.out.println(":::메뉴를 선택하세요:::");
             input = sc.nextInt();

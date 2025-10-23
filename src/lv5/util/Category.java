@@ -1,4 +1,4 @@
-package lv5.util.io;
+package lv5.util;
 
 public enum Category {
     BUGGER("Bugger"),

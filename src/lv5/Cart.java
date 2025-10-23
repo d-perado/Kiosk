@@ -41,16 +41,6 @@ public class Cart {
 
     //카트 가격 책정
     public Double sumPrice() {
-        Double sum = 0.0;
-        
-        if(this.cart.isEmpty()) {
-            return sum;
-        }
-
-        for(MenuItem menuItem : this.cart) {
-            sum += menuItem.getPrice();
-        }
-
-        return sum;
+        return this.cart.stream().mapToDouble(MenuItem::getPrice).sum();
     }
 }

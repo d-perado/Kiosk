@@ -70,11 +70,10 @@ public class Kiosk {
                     if (this.cart.getCart().isEmpty()) {
                         System.out.println(":::장바구니에 담긴 상품이 없습니다.:::");
                     } else {
-                        double sum = cart.sumPrice();
                         System.out.println("[ Orders ]");
                         output.printMenu(this.cart.getCart());
                         System.out.println("===================================");
-                        System.out.printf("결제하실 총 금액은 W %3.1f 입니다.\n", sum);
+                        System.out.printf("결제하실 총 금액은 W %3.1f 입니다.\n", cart.sumPrice());
                         System.out.printf("%2s. %-20s\n", "#", "주문");
                         input = sc.nextLine();
 
@@ -89,7 +88,7 @@ public class Kiosk {
                             int userSelect = Integer.parseInt(input)-1;
                             if(this.cart.getCart().size()>userSelect){
                                 System.out.println("취소하시려는 상품이 맞습니까? y/n");
-                                output.printNumberingMenu(userSelect,this.cart.getCartItem(userSelect));
+                                output.printNumberingMenu(userSelect+1,this.cart.getCartItem(userSelect));
                                 input = sc.nextLine();
                                 if (input.equals("y")){
                                     System.out.println(":::상품이 취소되었습니다.:::");
@@ -115,6 +114,8 @@ public class Kiosk {
         }
 
     }
+
+    //public
 
     public void exit() {
         this.isKiosk = false;
